@@ -2,14 +2,17 @@
   "name": "youtube",
   "version": "1.0.0",
   "description": "a backend -youtbe",
+  "type": "module",
   "keywords": [
     "javascript"
   ],
   "license": "ISC",
   "author": "Kamal",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
