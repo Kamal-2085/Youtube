@@ -1,5 +1,5 @@
-const asynhandler=(fn)=>{
-    async(req,res,next)=>{
+const asynchandler=(fn)=>{
+    return async(req,res,next)=>{
         try {
             await fn(req,res,next)
         } catch (error) {
@@ -10,4 +10,4 @@ const asynhandler=(fn)=>{
         }
     }
 }
-export default asynhandler;
+export default asynchandler;
